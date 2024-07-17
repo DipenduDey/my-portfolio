@@ -28,7 +28,7 @@ const About = () => {
           I bring extensive experience as a Node.js and React developer, having delivered numerous successful projects and innovative solutions. Proficient in Node.js, JavaScript, MongoDB, and React.js, I excel in problem-solving and maintain a meticulous coding approach. With a background enriched by valuable contributions at Deloitte USI, I am dedicated to further refining my Node.js and React.js skills and making impactful contributions to the growth and prosperity of an ambitious organization.
         </Typography>
       </Box>
-      <Box sx={{ flex: 1, order: { xs: 1, md: 2 }, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Box sx={{ flex: 1, order: { xs: 1, md: 2 }, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: "2vh" }}>
         <div className="box" style={{ position: 'relative' }}>
           <Avatar
             alt="Profile"

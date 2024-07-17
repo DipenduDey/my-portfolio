@@ -24,10 +24,10 @@ const Experience = () => {
       <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
         <b>Project 1 - Node JS Developer</b><br />
         Developed a chatbot using <b>NodeJS</b> within the Microsoft Teams application using the Bot Builder framework. Incorporated
-        adaptive cards to display tabular data and designed a welcome page to enhance interactivity.<br /> 
-        <br /><b>Project 2 - React JS Developer</b><br />Created multiple UI pages using ReactJS as per client requirement.<br />
+        adaptive cards to display tabular data and designed a welcome page to enhance interactivity.<br />
+        <br /><b>Project 2 - React JS Developer</b><br />Created multiple UI pages using <b>ReactJS</b> as per client requirement.<br />
         Created reusable components to reduce code duplication and ease future maintenance.<br />
-        <br/><b>Project 3 - NodeJS Developer & Operate</b><br />
+        <br /><b>Project 3 - NodeJS Developer & Operate</b><br />
         Implemented a responsive design that allowed the application to be used across multiple devices with minimal
         modifications.<br />
         Implemented parallel execution logic to reduce processing time.<br />
@@ -50,11 +50,11 @@ const Experience = () => {
             <Typography sx={{ width: '100%', textAlign: 'center' }}>Frontend</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <ul>
-              <li>React JS</li>
-              <li>JavaScript (ES6+)</li>
-              <li>Next JS</li>
-            </ul>
+            <Typography>
+              React JS,
+              JavaScript (ES6+),
+              Next JS
+            </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -67,11 +67,11 @@ const Experience = () => {
             <Typography sx={{ width: '100%', textAlign: 'center' }}>Backend</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <ul>
-              <li>Node JS</li>
-              <li>Python</li>
-              <li>Django</li>
-            </ul>
+            <Typography>
+              Node JS,
+              Python,
+              Django
+            </Typography>
           </AccordionDetails>
         </Accordion>
       </Box>

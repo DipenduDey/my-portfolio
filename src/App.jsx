@@ -5,10 +5,10 @@ import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import './App.css'; // Import the CSS file
+import './App.css';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about'); // State to track active section
+  const [activeSection, setActiveSection] = useState('about');
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -49,14 +49,14 @@ function App() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '100vh', // Ensure full viewport height
+        minHeight: '97vh', // Ensure full viewport height
         backgroundImage: getBackgroundColor(),
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         textAlign: 'center', // Center align text content
       }}
     >
-      <Card sx={{ minWidth: '60%', maxWidth: '60%', margin: 'auto', textAlign: 'center', borderRadius: 7 }}>
+      <Card sx={{ minWidth: '60%', maxWidth: '60%', borderRadius: 7, maxHeight: "50%", minHeight: "50%" }}>
         <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
         <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
           {renderActiveSection()}
