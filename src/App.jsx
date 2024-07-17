@@ -56,7 +56,7 @@ function App() {
         textAlign: 'center', // Center align text content
       }}
     >
-      <Card sx={{ minWidth: '60%', maxWidth: '60%', borderRadius: 7, maxHeight: "50%", minHeight: "50%" }}>
+      <Card sx={{ minWidth: '65%', maxWidth: '80%', borderRadius: 7 }}>
         <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
         <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
           {renderActiveSection()}
