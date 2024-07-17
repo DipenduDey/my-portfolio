@@ -49,7 +49,7 @@ function App() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '97vh', // Ensure full viewport height
+        minHeight: '100vh', // Ensure full viewport height
         backgroundImage: getBackgroundColor(),
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

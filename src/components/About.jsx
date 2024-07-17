@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
-import photo from '../assets/photo.JPG';
+import photo from '../assets/my_photo.jpg';
 import '../index.css'; // Import your CSS file here
 
 const About = () => {
