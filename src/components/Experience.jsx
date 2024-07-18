@@ -44,13 +44,11 @@ const Experience = () => {
             id="panel1-header"
             sx={{ justifyContent: 'center' }}
           >
-            <Typography sx={{ width: '100%', textAlign: 'center' }}>Frontend</Typography>
+            <Typography sx={{ width: '100%', textAlign: 'center' }}>Languages</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              React JS,
-              JavaScript (ES6+),
-              Next JS
+              JavaScript, Python
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -61,13 +59,41 @@ const Experience = () => {
             id="panel2-header"
             sx={{ justifyContent: 'center' }}
           >
-            <Typography sx={{ width: '100%', textAlign: 'center' }}>Backend</Typography>
+            <Typography sx={{ width: '100%', textAlign: 'center' }}>Frameworks</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Node JS,
-              Python,
-              Django
+              ReactJS, NodeJS, ExpressJS, NextJS, MongoDB, Django
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3-content"
+            id="panel3-header"
+            sx={{ justifyContent: 'center' }}
+          >
+            <Typography sx={{ width: '100%', textAlign: 'center' }}>Infrastructures</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Docker, Kubernetes, Jenkins, Elastic Search
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4-content"
+            id="panel4-header"
+            sx={{ justifyContent: 'center' }}
+          >
+            <Typography sx={{ width: '100%', textAlign: 'center' }}>Development Tools Used</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              GitHub Desktop, Git Bash, GitHub, Bitbucket, Kibana, New Relic
             </Typography>
           </AccordionDetails>
         </Accordion>

@@ -43,25 +43,31 @@ function App() {
   };
 
   return (
-    <Box
-      id="DemoGradient"
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh', // Ensure full viewport height
-        backgroundImage: getBackgroundColor(),
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        textAlign: 'center', // Center align text content
-      }}
-    >
-      <Card className="cardDetails" sx={{ borderRadius: 3 }}>
-        <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
-        <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
-          {renderActiveSection()}
-        </Box>
-      </Card>
+    <Box>
+
+
+      <Box
+        id="DemoGradient"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '100vh', // Ensure full viewport height
+          backgroundImage: getBackgroundColor(),
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          textAlign: 'center', // Center align text content
+        }}
+      >
+        <Card className="cardDetails" sx={{ borderRadius: 3 }}>
+          <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
+          <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
+            {renderActiveSection()}
+          </Box>
+        </Card>
+
+      </Box>
+
     </Box>
   );
 }
