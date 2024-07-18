@@ -21,23 +21,20 @@ const Experience = () => {
       <Typography sx={{ color: "#98a16c" }} fontStyle={'oblique'} mb={1}>
         From Dec 2021 - Present
       </Typography>
-      <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
-        <b>Project 1 - Node JS Developer</b><br />
-        Developed a chatbot using <b>NodeJS</b> within the Microsoft Teams application using the Bot Builder framework. Incorporated
-        adaptive cards to display tabular data and designed a welcome page to enhance interactivity.<br />
-        <br /><b>Project 2 - React JS Developer</b><br />Created multiple UI pages using <b>ReactJS</b> as per client requirement.<br />
-        Created reusable components to reduce code duplication and ease future maintenance.<br />
-        <br /><b>Project 3 - NodeJS Developer & Operate</b><br />
-        Implemented a responsive design that allowed the application to be used across multiple devices with minimal
-        modifications.<br />
-        Implemented parallel execution logic to reduce processing time.<br />
-        Developed new APIs to meet client requirements.<br />
-        Identified and resolved bugs within the system.<br />
-        Implemented new enhancements to the system.<br />
-        Resolved bugs within the existing codebase.<br />
-        Handled major incidents effectively, ensuring smooth delivery without any issues.<br />
-        <br /><b>Project 4 - React Developer</b><br />
-        Enhancing the present code for better reusability and performance
+      <Typography sx={{ color: "#0f112e", textAlign: "left" }} fontStyle={'oblique'} mb={2}>
+        <ul>
+          <li>Developed a chatbot in Microsoft teams using <b>NodeJS</b> the Bot Builder framework. Incorporated adaptive cards to display tabular data and designed a welcome page to enhance interactivity.</li>
+          <li>Created multiple UI pages using <b>ReactJS</b> as per client requirement.</li>
+          <li>Created reusable components to reduce code duplication and ease future maintenance.</li>
+          <li>Implemented a responsive design that allowed the application to be used across multiple devices with minimal modifications.</li>
+          <li>Implemented parallel execution logic to reduce processing time.</li>
+          <li>Developed new APIs to meet client requirements.</li>
+          <li>Identified and resolved bugs within the system.</li>
+          <li>Implemented new enhancements to the system.</li>
+          <li>Resolved bugs within the existing codebase.</li>
+          <li>Handled major incidents effectively, ensuring smooth delivery without any issues.</li>
+          <li>Enhancing the present code for better reusability and performance</li>
+        </ul>
       </Typography>
       <Box sx={{ maxWidth: '500px', margin: '0 auto' }}>
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

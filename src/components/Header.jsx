@@ -10,7 +10,7 @@ const Header = ({ onSectionChange, activeSection }) => {
   };
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/16SMpW4bxEf36lrs8s8r-Ph3qnRR05Ou6/view?usp=drive_link', '_blank'); // Replace with your Google Drive link
+    window.open('https://drive.google.com/file/d/16SMpW4bxEf36lrs8s8r-Ph3qnRR05Ou6/view?usp=drive_link', '_blank');
   };
 
   return (
@@ -21,13 +21,13 @@ const Header = ({ onSectionChange, activeSection }) => {
             <Typography sx={{ color: activeSection === 'about' ? 'red' : 'inherit' }}>About</Typography>
           </Button>
           <Button color="inherit" onClick={() => handleSectionClick('experience')}>
-            <Typography sx={{ color: activeSection === 'experience' ? 'lightblue' : 'inherit' }}>Experience</Typography>
+            <Typography sx={{ color: activeSection === 'experience' ? 'purple' : 'inherit' }}>Experience</Typography>
           </Button>
           <Button color="inherit" onClick={() => handleSectionClick('contact')}>
-            <Typography sx={{ color: activeSection === 'contact' ? 'lightgreen' : 'inherit' }}>Contact</Typography>
+            <Typography sx={{ color: activeSection === 'contact' ? 'green' : 'inherit' }}>Contact</Typography>
           </Button>
-          <Button color="inherit" variant="outlined" onClick={handleResumeClick}>
-            <Typography sx={{ color: 'inherit' }}>Resume</Typography>
+          <Button className="Button" color="inherit" variant="outlined" onClick={handleResumeClick}>
+            <Typography >Resume</Typography>
           </Button>
         </Toolbar>
       </AppBar>

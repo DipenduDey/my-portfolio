@@ -44,7 +44,7 @@ function App() {
 
   return (
     <Box
-      className="flow-background"
+      id="DemoGradient"
       sx={{
         display: 'flex',
         justifyContent: 'center',
@@ -56,7 +56,7 @@ function App() {
         textAlign: 'center', // Center align text content
       }}
     >
-      <Card sx={{ minWidth: '65%', maxWidth: '80%', borderRadius: 7 }}>
+      <Card className="cardDetails" sx={{ borderRadius: 3 }}>
         <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
         <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
           {renderActiveSection()}

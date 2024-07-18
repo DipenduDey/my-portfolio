@@ -15,14 +15,14 @@ const Contact = () => {
   return (
     <Box id="contact" sx={{ p: 4, textAlign: 'center' }}>
       <Typography variant="h4" component="div" gutterBottom>
-        <b>Get In Touch</b>
+        <b>Get In Touch!</b>
       </Typography>
-      <Typography  sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
+      <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </Typography>
-      <Box sx={{ mt: 2 }}>
-        <Button variant="contained" color="primary" onClick={handleEmailClick} sx={{ mr: 2 }}>
-          Email Me
+      <Box sx={{ mt: 2, display: 'inline-flex' }}>
+        <Button variant="contained" color="primary" sx={{ mr: 2 }} onClick={handleEmailClick}>
+          Email
         </Button>
         <Button variant="contained" color="secondary" onClick={handleLinkedInClick}>
           LinkedIn
