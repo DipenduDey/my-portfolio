@@ -5,10 +5,12 @@ import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import { useTheme } from '@mui/material/styles';
 import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
+  const theme = useTheme();
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -44,8 +46,6 @@ function App() {
 
   return (
     <Box>
-
-
       <Box
         id="DemoGradient"
         sx={{
@@ -57,17 +57,45 @@ function App() {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           textAlign: 'center', // Center align text content
+          [theme.breakpoints.down('md')]: {
+            minHeight: '100vh', // adjust height for medium and below screens
+          },
+          [theme.breakpoints.down('sm')]: {
+            minHeight: '100vh', // adjust height for small and below screens
+          },
         }}
       >
-        <Card className="cardDetails" sx={{ borderRadius: 3 }}>
+        <Card
+          className="cardDetails"
+          sx={{
+            borderRadius: 3,
+            backgroundColor: "white",
+            [theme.breakpoints.down('md')]: {
+              width: '80%', // adjust width for medium and below screens
+            },
+            [theme.breakpoints.down('sm')]: {
+              width: '90%', // adjust width for small and below screens
+            },
+          }}
+        >
           <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
-          <Box sx={{ p: 4, maxHeight: 700, overflow: 'auto' }}>
+          <Box
+            sx={{
+              p: 4,
+              maxHeight: 700,
+              overflow: 'auto',
+              [theme.breakpoints.down('md')]: {
+                maxHeight: 500, // adjust height for medium and below screens
+              },
+              [theme.breakpoints.down('sm')]: {
+                maxHeight: 300, // adjust height for small and below screens
+              },
+            }}
+          >
             {renderActiveSection()}
           </Box>
         </Card>
-
       </Box>
-
     </Box>
   );
 }
