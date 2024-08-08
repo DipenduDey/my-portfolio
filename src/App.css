@@ -1,12 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }  
 
 .cardDetails{
-  min-height: 60%;
-  max-height: 60%;
+  max-height: 50%;
   width: 80%;
+  border-radius: 50rem;
 }
 
 .Button {
@@ -17,16 +21,6 @@ html, body {
   animation: Gradient 10s ease infinite !important;
 }
 
-@-webkit-keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
 @keyframes Gradient { 
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}

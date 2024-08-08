@@ -9,26 +9,28 @@ const About = () => {
   return (
     <Box sx={{
       display: 'flex',
-      flexDirection: { xs: 'column', md: 'row' }, // Column layout on mobile, row layout on medium and larger screens
+      flexDirection: { xs: 'column', md: 'row' },
       alignItems: 'center',
       justifyContent: 'center',
-      textAlign: 'left', // Adjust text alignment as needed
-      p: 4,
-      maxWidth: '800px', // Adjust the maximum width as needed
-      margin: 'auto', // Center align horizontally
+      textAlign: 'left',
+      margin: 'auto',
     }}>
-      <Box sx={{ flex: 1, order: { xs: 2, md: 1 }, marginBottom: { xs: '1rem', md: 0 } }}>
+
+      <Box sx={{ flex: 2, order: { xs: 2, md: 1 }, marginBottom: { xs: '1rem', md: 0 } }}>
         <Typography sx={{ color: "#98a16c" }} fontStyle={'oblique'} mb={1}>
-          Software Engineer
+          Software Developer
         </Typography>
-        <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '1rem' }}>
-          Hello! my name is Dipendu Dey.
+        <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '1rem', margin: "3rem 0", color: "#495057" }}>
+          Hello! My name is Dipendu Dey.
         </Typography>
-        <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
-          I bring extensive experience as a Node.js and React developer, having delivered numerous successful projects and innovative solutions. Proficient in Node.js, JavaScript, MongoDB, and React.js, I excel in problem-solving and maintain a meticulous coding approach. With a background enriched by valuable contributions at Deloitte USI, I am dedicated to further refining my Node.js and React.js skills and making impactful contributions to the growth and prosperity of an ambitious organization.
+        <Typography sx={{ color: "#0f112e", lineHeight: "2rem" }} fontStyle={'oblique'} mb={2}>
+          Dynamic Software Engineer with a proven track record at Deloitte US, specializing in developing
+          innovative solutions using NodeJS and ReactJS. Excelled in creating responsive designs and enhancing
+          systems performance, significantly reducing processing times. Skilled in JavaScript and adept at
+          mentoring junior developers, showcasing both technical prowess and leadership abilities.
         </Typography>
       </Box>
-      <Box sx={{ flex: 1, order: { xs: 1, md: 2 }, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: "2vh" }}>
+      <Box sx={{ flex: 1, order: { xs: 1, md: 2 }, textAlign: 'center', display: 'grid', alignItems: 'center', justifyContent: 'center', marginLeft: "2vh", marginBottom: "1rem" }}>
         <div className="box" style={{ position: 'relative' }}>
           <Avatar
             alt="Profile"
@@ -38,7 +40,7 @@ const About = () => {
           <div className="overlay"></div>
         </div>
       </Box>
-    </Box>
+    </Box >
   );
 };
 

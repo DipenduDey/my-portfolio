@@ -13,8 +13,8 @@ const Contact = () => {
   };
 
   return (
-    <Box id="contact" sx={{ p: 4, textAlign: 'center' }}>
-      <Typography variant="h4" component="div" gutterBottom>
+    <Box id="contact" sx={{ p: 4, textAlign: 'center', lineHeight: "5rem" }}>
+      <Typography variant="h4" component="div" gutterBottom sx={{ marginBottom: "2rem" }}>
         <b>Get In Touch!</b>
       </Typography>
       <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>

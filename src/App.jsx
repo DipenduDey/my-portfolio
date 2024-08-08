@@ -52,32 +52,15 @@ function App() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '100vh', // Ensure full viewport height
+          minHeight: '100vh',
           backgroundImage: getBackgroundColor(),
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          textAlign: 'center', // Center align text content
-          [theme.breakpoints.down('md')]: {
-            minHeight: '100vh', // adjust height for medium and below screens
-          },
-          [theme.breakpoints.down('sm')]: {
-            minHeight: '100vh', // adjust height for small and below screens
-          },
+          textAlign: 'center'
+
         }}
       >
-        <Card
-          className="cardDetails"
-          sx={{
-            borderRadius: 3,
-            backgroundColor: "white",
-            [theme.breakpoints.down('md')]: {
-              width: '80%', // adjust width for medium and below screens
-            },
-            [theme.breakpoints.down('sm')]: {
-              width: '90%', // adjust width for small and below screens
-            },
-          }}
-        >
+        <Card className="cardDetails" sx={{ borderRadius: "1rem" }}>
           <Header onSectionChange={handleSectionChange} activeSection={activeSection} />
           <Box
             sx={{
@@ -96,7 +79,7 @@ function App() {
           </Box>
         </Card>
       </Box>
-    </Box>
+    </Box >
   );
 }
 
