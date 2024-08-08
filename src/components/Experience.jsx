@@ -14,8 +14,7 @@ const Experience = () => {
   };
 
   return (
-    <Box id="projects" sx={{ p: 4, textAlign: 'center' }}>
-
+    <Box id="projects" sx={{ textAlign: 'center' }}>
       <Typography variant="h4" sx={{ fontWeight: 'bold', color: "#495057" }}>
         Software Engineer <i>@ Deloitte USI</i>
       </Typography>
@@ -30,8 +29,9 @@ const Experience = () => {
         justifyContent: 'center',
         textAlign: 'left',
         margin: 'auto',
+        gap: "1rem",
       }}>
-        <Box sx={{ flex: 2, order: { xs: 1, md: 2 }, marginBottom: { xs: '1rem', md: 0 }, paddingRight: "4rem" }}>
+        <Box sx={{ flex: 2, order: { xs: 1, md: 2 }, marginBottom: { xs: '1rem', md: 0 } }}>
           <Typography sx={{ color: "#0f112e", textAlign: "left", lineHeight: "2rem" }} fontStyle={'oblique'} mb={2}>
             <ul>
               <li> Developed chatbot using NodeJS in the Microsoft Teams application using the Bot Builder framework.</li>
