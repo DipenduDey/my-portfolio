@@ -5,12 +5,10 @@ import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import { useTheme } from '@mui/material/styles';
 import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
-  const theme = useTheme();
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -67,12 +65,6 @@ function App() {
               p: 4,
               maxHeight: 700,
               overflow: 'auto',
-              [theme.breakpoints.down('md')]: {
-                maxHeight: 500, // adjust height for medium and below screens
-              },
-              [theme.breakpoints.down('sm')]: {
-                maxHeight: 300, // adjust height for small and below screens
-              },
             }}
           >
             {renderActiveSection()}

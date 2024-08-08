@@ -20,7 +20,7 @@ const Contact = () => {
       <Typography sx={{ color: "#0f112e" }} fontStyle={'oblique'} mb={2}>
         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </Typography>
-      <Box sx={{ mt: 2, display: 'inline-flex' }}>
+      <Box sx={{ mt: 2, display: 'inline-flex', flexWrap: "wrap" }}>
         <Button variant="contained" color="primary" sx={{ mr: 2 }} onClick={handleEmailClick}>
           Email
         </Button>
