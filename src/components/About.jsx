@@ -24,7 +24,7 @@ const About = () => {
           Hello! My name is Dipendu Dey.
         </Typography>
         <Typography sx={{ color: "#0f112e", lineHeight: "2rem" }} fontStyle={'oblique'} mb={2}>
-          Dynamic Software Engineer with a proven track record at Deloitte US, specializing in developing
+          Dynamic Software Engineer with a proven track record at Deloitte USI, specializing in developing
           innovative solutions using NodeJS and ReactJS. Excelled in creating responsive designs and enhancing
           systems performance, significantly reducing processing times. Skilled in JavaScript and adept at
           mentoring junior developers, showcasing both technical prowess and leadership abilities.
