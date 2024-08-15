@@ -14,7 +14,6 @@ function App() {
     setActiveSection(section);
   };
 
-  // Render the active section based on activeSection state
   const renderActiveSection = () => {
     switch (activeSection) {
       case 'about':
@@ -24,21 +23,20 @@ function App() {
       case 'contact':
         return <Contact />;
       default:
-        return null; // Handle default case as needed
+        return null;
     }
   };
 
-  // Determine the background gradient based on activeSection
   const getBackgroundColor = () => {
     switch (activeSection) {
       case 'about':
-        return 'linear-gradient(45deg, #c44436 30%, #541d17 70%)'; // Example gradient for About section
+        return 'linear-gradient(45deg, #c44436 30%, #541d17 70%)';
       case 'experience':
-        return 'linear-gradient(45deg, #6294be 30%, #244057 70%)'; // Example gradient for Experience section
+        return 'linear-gradient(45deg, #6294be 30%, #244057 70%)';
       case 'contact':
-        return 'linear-gradient(45deg, #aef74b 30%, #1a2c02 70%)'; // Example gradient for Contact section
+        return 'linear-gradient(45deg, #aef74b 30%, #1a2c02 70%)';
       default:
-        return 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 70%)'; // Default gradient
+        return 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 70%)';
     }
   };
 

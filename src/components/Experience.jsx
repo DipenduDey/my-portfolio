@@ -111,6 +111,9 @@ const Experience = () => {
           </Accordion>
         </Box>
       </Box>
+      <p><b>
+        **For more details please refer to my RESUME**
+      </b></p>
     </Box>
   );
 };

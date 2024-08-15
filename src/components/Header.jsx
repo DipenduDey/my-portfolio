@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 const Header = ({ onSectionChange, activeSection }) => {
   const handleSectionClick = (section) => {
-    onSectionChange(section); // Call the function passed from App.js
+    onSectionChange(section);
   };
 
   const handleResumeClick = () => {

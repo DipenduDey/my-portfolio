@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import photo from '../assets/my_photo.jpg';
-import '../index.css'; // Import your CSS file here
+import '../index.css';
 
 const About = () => {
   return (
@@ -24,10 +24,7 @@ const About = () => {
           Hello! My name is Dipendu Dey.
         </Typography>
         <Typography sx={{ color: "#0f112e", lineHeight: "2rem" }} fontStyle={'oblique'} mb={2}>
-          Dynamic Software Engineer with a proven track record at Deloitte USI, specializing in developing
-          innovative solutions using NodeJS and ReactJS. Excelled in creating responsive designs and enhancing
-          systems performance, significantly reducing processing times. Skilled in JavaScript and adept at
-          mentoring junior developers, showcasing both technical prowess and leadership abilities.
+          Dynamic Software Engineer with 3 years of experience with a proven track record at Deloitte USI, specializing in developing innovative solutions using NodeJS and ReactJS. Excelled in creating responsive designs and enhancing systems performance, significantly reducing processing times. Skilled in JavaScript and adept at mentoring junior developers, showcasing both technical prowess and leadership abilities.
         </Typography>
       </Box>
       <Box sx={{ flex: 1, order: { xs: 1, md: 2 }, textAlign: 'center', display: 'grid', alignItems: 'center', justifyContent: 'center', marginLeft: "2vh", marginBottom: "1rem" }}>
