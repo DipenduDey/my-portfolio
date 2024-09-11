@@ -10,7 +10,7 @@ const Header = ({ onSectionChange, activeSection }) => {
   };
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1GjQfDp5c1EKYF_rlcVBEj73ArsmowyW8/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1PXwpMw9xucw83WVeGIvPTKbszHUnbH6m/view?usp=sharing', '_blank');
   };
 
   return (
