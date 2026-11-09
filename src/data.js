@@ -4,7 +4,7 @@ export const profile = {
   email: 'dipendudey9835@gmail.com',
   linkedin: 'https://www.linkedin.com/in/dipendu-dey-a81466166/',
   github: 'https://github.com/DipenduDey',
-  resume: 'https://drive.google.com/file/d/1PXwpMw9xucw83WVeGIvPTKbszHUnbH6m/view?usp=sharing',
+  resume: '/resume.pdf',
   lead: 'Consultant – Software Developer at Atos. 6+ years across Deloitte USI, Walmart and Atos, from MS Teams chatbots to zero-downtime Kubernetes migrations.',
   summary: [
     'I am a software engineer with 6+ years of experience building scalable, business-focused applications. Today I work at Atos as a Consultant – Software Developer, full-stack with React.js and Node.js.',
